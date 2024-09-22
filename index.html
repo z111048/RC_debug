@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>鋼筋混凝土設計參考書校對結果</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>鋼筋混凝土設計參考書校對結果</h1>
+    </header>
+    <div class="container">
+      <div id="keyInputSection">
+        <div class="key-input">
+          <input type="text" id="keyInput" placeholder="請輸入解密金鑰" />
+          <button onclick="setKey()">設置金鑰</button>
+        </div>
+      </div>
+      <div id="contentSection" class="hidden">
+        <div id="summary" class="summary"></div>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="搜索文件名或內容..." />
+          <button id="searchButton" onclick="searchFiles()">搜索</button>
+        </div>
+        <div id="fileList"></div>
+        <div id="pagination"></div>
+      </div>
+    </div>
+
+    <script src="all.js"></script>
+  </body>
+</html>
